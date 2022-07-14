@@ -1,0 +1,14 @@
+<div class="container">
+    <h4>add your todo</h4>
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Todo Title</label>
+            <input [(ngModel)]="title" type="text" class="form-control" id="title" name="title">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Todo description</label>
+            <input type="text" class="form-control" id="desc" name="desc" [(ngModel)]="desc">
+        </div>
+        <button type="submit" class="btn btn-primary">ADD TODO</button>
+    </form>
+</div>
